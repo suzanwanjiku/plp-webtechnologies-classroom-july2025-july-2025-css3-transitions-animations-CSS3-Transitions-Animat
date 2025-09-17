@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  margin: 20px auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Keyframe animation */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-100px); }
+  100% { transform: translateY(0); }
+}
+
+.animate {
+  animation: bounce 1s ease-in-out;
+}
